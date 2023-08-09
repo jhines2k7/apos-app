@@ -1,5 +1,5 @@
 require('apostrophe')({
-  shortName: 'a3-boilerplate',
+  shortName: 'apos-app',
   modules: {
     // Apostrophe module configuration
     // *******************************
@@ -24,6 +24,11 @@ require('apostrophe')({
     '@apostrophecms/video-widget': {
       options: {
         className: 'bp-video-widget'
+      }
+    },
+    '@apostrophecms/db': {
+      options: {
+        uri: 'mongodb+srv://jameshines10:LmyLnDTFdiQJX2fk@cluster0.jzmvs9i.mongodb.net/?retryWrites=true&w=majority'
       }
     },
     // `asset` supports the project's webpack build for client-side assets.
